@@ -4,12 +4,19 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+class InputUtil {
+  private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+  public static String readLine() throws IOException {
+    return br.readLine();
+  }
+}
+
 class Cards {
   int [] table;
 
   public Cards() throws IOException {
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    this.table = new Main().parseintAry(br.readLine().split(" "));
+    this.table = new Main().parseintAry(InputUtil.readLine().split(" "));
   }
 }
 
@@ -23,8 +30,7 @@ public class Main {
   }
 
   public void run() throws IOException {
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    int [] inputNums = parseintAry(br.readLine().split(" "));
+    int [] inputNums = parseintAry(InputUtil.readLine().split(" "));
 
     Cards cd = new Cards();
 
@@ -33,7 +39,7 @@ public class Main {
       for (int k = i+1; k < cd.table.length; k++) {
         for (int m = k+1; m < cd.table.length; m++) {
           int sum = cd.table[i] + cd.table[k] + cd.table[m];
-          if (sum > maxSum && sum < inputNums[1]) {
+          if (sum > maxSum && sum <= inputNums[1]) {
             maxSum = sum;
           }
         }

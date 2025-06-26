@@ -4,7 +4,7 @@
 
 # Default IntelliJ IDEA files to ignore
 /shelf/
-/workspace.xml
+/.idea/workspace.xml
 /tasks.xml
 /usage.statistics.xml
 /dictionaries/
