@@ -188,6 +188,9 @@ $RECYCLE.BIN/
 # Development Tools and Others
 # =============================================================================
 
+# Gemini CLI MCP
+.gemini/
+
 # Temporary files
 *.tmp
 *.bak
