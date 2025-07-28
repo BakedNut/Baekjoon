@@ -4,7 +4,7 @@
 
 # Default IntelliJ IDEA files to ignore
 /shelf/
-/.idea/workspace.xml
+.idea/workspace.xml
 /tasks.xml
 /usage.statistics.xml
 /dictionaries/
@@ -89,6 +89,33 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+
+# =============================================================================
+# C# / .NET Related Files
+# =============================================================================
+
+# Build results
+bin/
+obj/
+
+# Visual Studio user-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider (JetBrains)
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# ASP.NET Core local settings
+appsettings.*.json
+
+# .NET Core CLI
+.vs/
 
 # =============================================================================
 # C++ Related Files
